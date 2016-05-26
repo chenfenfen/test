@@ -1,0 +1,54 @@
+cloud socket code:
+https://github.com/hawaecho/cloud-robotics-server-client
+
+tools:
+sudo apt-get install terminator nautilus-open-terminal source-highlight ipython quicksynergy
+
+±àŒ­Æ÷ÓÐ¹Ø:
+sudo apt-get install vim vim-gnome 
+
+svn:
+sudo apt-get install subversion
+
+twisted:
+sudo add-apt-repository ppa:twisted-dev/ppa
+sudo apt-get update
+sudo apt-get install python-twisted
+
+ros-indigoµÄ°²×°£º
+
+sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list
+sudo apt-key adv --keyserver hkp://ha.pool.sks-keyservers.net --recv-key 0xB01FA116
+sudo apt-get update
+sudo apt-get install libgl1-mesa-dev-lts-utopic
+sudo apt-get install ros-indigo-desktop-full
+sudo apt-get install ros-indigo-desktop
+sudo apt-get install ros-indigo-ros-base
+apt-cache search ros-indigo
+
+³õÊŒ»¯rosdep:
+
+sudo rosdep init
+rosdep update
+
+ros»·Ÿ³ÅäÖÃ£º
+
+echo "source /opt/ros/indigo/setup.bash" >> ~/.bashrc
+source ~/.bashrc
+
+rosinstall°²×°£º
+
+sudo apt-get install python-rosinstall
+
+postgresqlµÄ°²×°£º
+
+client:  sudo apt-get install postgresql-client
+server:  sudo apt-get install postgresql postgresql-contrib
+pgadmin3:sudo apt-get install pgadmin3
+
+sycopg2ÊÇpython±à³ÌÓïÑÔµÄpostgresqlÊýŸÝ¿âµÄÊÊÅäÆ÷£¬ËùÒÔÒª°²×°Python-psycopg2
+sudo apt-get install python-psycopg2
+
+
+ŽŽœšÃûÎªpostgresµÄÊýŸÝ¿â²¢µÇÂœ£ºsudo -u postgres psql postgres
+µÇÂœÊýŸÝ¿â£ºsudo su - postgres   -----> psql -----> \l,\dt,\c
